@@ -1,3 +1,15 @@
-<p>
-  encabezado works!
-</p>
+<header class="sticky">
+  <h1>{{title}}</h1>
+  <a routerLink="personas-listar"
+     routerLinkActive="router-link-active"
+     class="button">
+     <p>
+    <span>Listar personas</span>
+  </a>
+  <a routerLink="personas-crear"
+     routerLinkActive="router-link-active"
+     class="button">
+     <p>
+    <span>Crear / Editar personas</span>
+  </a>
+</header>

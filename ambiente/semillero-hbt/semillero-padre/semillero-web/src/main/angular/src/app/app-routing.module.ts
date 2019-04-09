@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
-import { CreacionPersonasComponent } from './nucleo/main/creacion-personas/creacion-personas.component';
-
+import { CreacionPersonasComponent } from './nucleo/capa/principal/creacion-personas/creacion-personas.component'
+import { ListarPersonasComponent } from './nucleo/capa/principal/listar-personas/listar-personas.component';
 const routes: Routes = [
-
-  { path: '', component: AppComponent },
-  { path: 'creacion-personas', component: CreacionPersonasComponent }
+	{
+	    path: 'personas-crear',
+	    component: CreacionPersonasComponent
+		},
+		{
+			path: 'personas-listar',
+			component : ListarPersonasComponent
+		}
 ];
 
 @NgModule({
